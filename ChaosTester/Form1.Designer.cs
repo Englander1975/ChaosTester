@@ -45,8 +45,11 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPageWeb = new System.Windows.Forms.TabPage();
             this.openFileDialogTestFile = new System.Windows.Forms.OpenFileDialog();
+            this.textBoxURL = new System.Windows.Forms.TextBox();
+            this.labelURL = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageDesktop.SuspendLayout();
+            this.tabPageWeb.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -219,6 +222,8 @@
             // 
             // tabPageWeb
             // 
+            this.tabPageWeb.Controls.Add(this.labelURL);
+            this.tabPageWeb.Controls.Add(this.textBoxURL);
             this.tabPageWeb.Location = new System.Drawing.Point(4, 24);
             this.tabPageWeb.Name = "tabPageWeb";
             this.tabPageWeb.Padding = new System.Windows.Forms.Padding(3);
@@ -231,6 +236,22 @@
             // 
             this.openFileDialogTestFile.FileName = "openFileDialog1";
             // 
+            // textBoxURL
+            // 
+            this.textBoxURL.Location = new System.Drawing.Point(18, 46);
+            this.textBoxURL.Name = "textBoxURL";
+            this.textBoxURL.Size = new System.Drawing.Size(456, 23);
+            this.textBoxURL.TabIndex = 0;
+            // 
+            // labelURL
+            // 
+            this.labelURL.AutoSize = true;
+            this.labelURL.Location = new System.Drawing.Point(18, 28);
+            this.labelURL.Name = "labelURL";
+            this.labelURL.Size = new System.Drawing.Size(31, 15);
+            this.labelURL.TabIndex = 1;
+            this.labelURL.Text = "URL:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -242,6 +263,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageDesktop.ResumeLayout(false);
             this.tabPageDesktop.PerformLayout();
+            this.tabPageWeb.ResumeLayout(false);
+            this.tabPageWeb.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -265,5 +288,7 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Label labelURL;
+        private TextBox textBoxURL;
     }
 }
